@@ -23,10 +23,10 @@ jobs:
       - name: Publish To NuGet Aev.MoqForLogs
         uses: brandedoutcast/publish-nuget@v2.5.4
         with:
-          PROJECT_FILE_PATH: ./src/moq4logs/aev.moqforlogs.csproj
+          PROJECT_FILE_PATH: ./src/moq4logs/moqforlogs.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           # NuGet package id, used for version detection & defaults to project name
-          PACKAGE_NAME: Aev.MoqForLogs
+          PACKAGE_NAME: MoqForLogs
           INCLUDE_SYMBOLS: false
           # VERSION_REGEX: <Version>(.*)<\/Version>
           TAG_FORMAT: v*
