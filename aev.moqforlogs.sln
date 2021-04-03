@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{47EDF03F-624
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aev.moqforlogs", "src\moq4logs\aev.moqforlogs.csproj", "{4D5ED9FF-4969-46C8-8EEE-724C22F45CEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aev.moqforlogs.tests", "src\tests\aev.moqforlogs.tests.csproj", "{BF022506-0004-49C2-A13A-D3958F0C3CBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aev.moqforlogs.tests", "tests\aev.moqforlogs.tests.csproj", "{BF022506-0004-49C2-A13A-D3958F0C3CBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
