@@ -5,12 +5,11 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <Version>1.0.0</Version>
     <Description>Utility library for using Moq with ILogger Extension Methods</Description>
-    <IncludeSymbols>false</IncludeSymbols>
     <PackageId>moqforlogs</PackageId>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/anibalvelarde/moqs-for-logs</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageVersion>$(Version)</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RepositoryUrl>https://github.com/anibalvelarde/moqs-for-logs</RepositoryUrl>
     <RootNamespace>Spackle</RootNamespace>

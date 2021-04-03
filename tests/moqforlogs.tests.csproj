@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\moq4logs\aev.moqforlogs.csproj" />
+    <ProjectReference Include="..\src\moq4logs\moqforlogs.csproj" />
   </ItemGroup>
 
 </Project>
