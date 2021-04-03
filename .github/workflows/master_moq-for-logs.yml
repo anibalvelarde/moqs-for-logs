@@ -20,7 +20,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore
       - name: Test
         run: dotnet test --no-restore --verbosity normal
-      - name: Publish To NuGet Aev.MoqForLogs
+      - name: Publish To NuGet MoqForLogs
         uses: brandedoutcast/publish-nuget@v2.5.4
         with:
           PROJECT_FILE_PATH: ./src/moq4logs/moqforlogs.csproj
