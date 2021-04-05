@@ -1,4 +1,4 @@
-# moqs-for-logs
+# moq-for-logs
 
 If you are a fan of mocking dependencies with [`MOQ`](https://github.com/moq/moq4#moq) and some of your "Subjects Under Test" use the `Microsoft.Extensions.Logging.ILogger` extension methods... You know how irritating is to get the "Moq does not do extension methods" error.
 
@@ -60,7 +60,7 @@ When you put this class under test you could write a unit test like the followin
 
 Then you sadly find out that `Moq` does not support Extension Methods, because [_reasons_](https://github.com/Moq/moq4/issues/189).
 
-If you spend some time on-line you'll find ways to work around this problem. Another way, is to use Moqs-For-Logs and keep on coding, like so:
+If you spend some time on-line you'll find ways to work around this problem. Another way, is to use Moq-For-Logs and keep on coding, like so:
 
 ```cs
         [Fact]

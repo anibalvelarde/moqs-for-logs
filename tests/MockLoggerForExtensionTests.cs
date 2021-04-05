@@ -1,9 +1,10 @@
 using System;
 using Microsoft.Extensions.Logging;
 using Moq;
+using moqforlogs;
 using Xunit;
 
-namespace aev.moqforlogs.tests
+namespace moqforlogs.tests
 {
     public class MockLoggerForExtensionTests
     {
@@ -12,8 +13,8 @@ namespace aev.moqforlogs.tests
         {
             // arrange
             var expValue = 1;
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoSomethingAndLogInfo(expValue);
@@ -29,8 +30,8 @@ namespace aev.moqforlogs.tests
         {
             // arrange
             var expValue = 1;
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoSomethingAndLogDebug(expValue);
@@ -46,8 +47,8 @@ namespace aev.moqforlogs.tests
         {
             // arrange
             var expValue = 1;
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoSomethingAndLogError(expValue);
@@ -62,8 +63,8 @@ namespace aev.moqforlogs.tests
         public void Should_Verify_When_Logging_Multiple_Log_Kinds()
         {
             // arrange
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoManyLogTypes();
@@ -80,8 +81,8 @@ namespace aev.moqforlogs.tests
         {
             // arrange
             var expLogCount = 3;
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoManyLogTypes(expLogCount);
@@ -98,8 +99,8 @@ namespace aev.moqforlogs.tests
         {
             // arrange
             var expLogCount = 0;
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoManyLogTypes(expLogCount);
@@ -114,8 +115,8 @@ namespace aev.moqforlogs.tests
         {
             // arrange
             var expLogCount = 5;
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoManyLogTypesOfCertainLogLevelKind(LogLevel.Debug, expLogCount);
@@ -130,8 +131,8 @@ namespace aev.moqforlogs.tests
         {
             // arrange
             var expLogCount = 5;
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoManyLogTypesOfCertainLogLevelKind(LogLevel.Information, expLogCount);
@@ -146,8 +147,8 @@ namespace aev.moqforlogs.tests
         {
             // arrange
             var expLogCount = 5;
-            var fakeLogger = Mock.Of<ILogger<aev.moqforlogs.tests.LogConsumer>>();
-            var sut = new aev.moqforlogs.tests.LogConsumer(fakeLogger);
+            var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
+            var sut = new LogConsumer(fakeLogger);
 
             // act
             sut.DoManyLogTypesOfCertainLogLevelKind(LogLevel.Error, expLogCount);

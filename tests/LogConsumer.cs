@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Extensions.Logging;
 
-namespace aev.moqforlogs.tests
+namespace moqforlogs.tests
 {
     public class LogConsumer
     {

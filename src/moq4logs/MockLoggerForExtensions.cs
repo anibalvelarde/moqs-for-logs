@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Moq;
 
-namespace aev.moqforlogs
+namespace moqforlogs
 {
     public static class MockLoggerForExtensions
     {
