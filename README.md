@@ -14,7 +14,7 @@ Further imagine that you are using `ILogger` to add some debug traces in your co
     {
         private readonly ILogger<MyClass> _logger;
 
-        public LogConsumer(ILogger<MyClass> logger)
+        public MyClass(ILogger<MyClass> logger)
         {
             _logger = logger;
         }
