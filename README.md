@@ -81,4 +81,4 @@ If you spend some time on-line you'll find ways to work around this problem. Ano
 ```
 
 For more examples of how to use it, check out the [`Unit Tests`](./tests/MockLoggerForExtensionTests.cs) section in this repo.
-I hope you tri it. I hope you like using it!
+I hope you try it. I hope you like using it!
