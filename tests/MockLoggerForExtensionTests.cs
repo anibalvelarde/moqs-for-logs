@@ -59,21 +59,22 @@ namespace moqforlogs.tests
             mockLogger.VerifyErrorWasCalledWith($"After operation with Value: {expValue}");
         }
 
-        [Fact]
-        public void Should_Verify_When_Logging_Multiple_Log_Kinds()
+        [Theory]
+        [InlineData(LogLevel.Information)]
+        [InlineData(LogLevel.Debug)]
+        [InlineData(LogLevel.Error)]
+        public void Should_Verify_When_Logging_Multiple_Log_Kinds(LogLevel testLevel)
         {
             // arrange
             var fakeLogger = Mock.Of<ILogger<LogConsumer>>();
             var sut = new LogConsumer(fakeLogger);
 
             // act
-            sut.DoManyLogTypes();
+            sut.DoManyLogTypesOfCertainLogLevelKind(testLevel);
 
             // assert
             var mockLogger = Mock.Get<ILogger<LogConsumer>>(fakeLogger);
-            mockLogger.VerifyLogLevelMeetsCallCount(LogLevel.Information, 1);
-            mockLogger.VerifyLogLevelMeetsCallCount(LogLevel.Debug, 1);
-            mockLogger.VerifyLogLevelMeetsCallCount(LogLevel.Error, 1);
+            mockLogger.VerifyLogLevelMeetsCallCount(testLevel, 1);
         }
 
         [Fact]
