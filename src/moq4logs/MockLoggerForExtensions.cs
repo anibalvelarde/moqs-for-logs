@@ -57,7 +57,7 @@ namespace moqforlogs
         {
             logger.Verify(
                 x => x.Log(
-                    It.Is<LogLevel>(lvl => lvl == LogLevel.Error),
+                    It.Is<LogLevel>(lvl => lvl == expectedLogLevel),
                     It.IsAny<EventId>(),
                     It.Is<It.IsAnyType>((v, t) => true),
                     It.IsAny<Exception>(),
