@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <AssemblyName>moqforlogs</AssemblyName>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <Version>1.0.2</Version>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <Version>2.0.0</Version>
     <Description>Utility library for using Moq with ILogger Extension Methods</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
@@ -16,7 +16,7 @@
     <RepositoryUrl>https://github.com/anibalvelarde/moqs-for-logs</RepositoryUrl>
     <RootNamespace>Spackle</RootNamespace>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <Company>AnibalVelarde.com</Company>
     <Authors>Anibal Velarde</Authors>
     <Product>moqforlogs</Product>
