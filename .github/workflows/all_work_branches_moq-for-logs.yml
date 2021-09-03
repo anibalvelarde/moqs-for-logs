@@ -9,13 +9,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    name: .NET 5 App
     steps:
       - uses: actions/checkout@v2
-      - name: Setup .NET Core
+      - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 3.1.101
+          dotnet-version: 5.0.101
       - name: Install dependencies
         run: dotnet restore
       - name: Build
